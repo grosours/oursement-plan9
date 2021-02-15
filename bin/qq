@@ -1,0 +1,15 @@
+#!/usr/local/plan9/bin/rc
+
+op=$1
+if (~ $op '') {
+	op='"'
+}
+cl=$2
+if (~ $cl '') {
+	cl=$op
+}
+
+
+echo -n $op
+echo -n `{cat}
+echo -n $cl

@@ -1,0 +1,4 @@
+#!/usr/local/plan9/bin/rc
+
+test -d $HOME/workspace/deezer-stack || { echo 'Please install the deezer stack'; exit 1; }
+exec $HOME/workspace/deezer-stack/bin/dzr-docker.sh $* | /Users/gfaure/plan9/bin/ansistrip

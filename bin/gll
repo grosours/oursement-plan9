@@ -1,0 +1,6 @@
+#!/usr/local/plan9/bin/rc
+
+count=$1
+if (~ $count '') { count=10 }
+
+git ll -n $count

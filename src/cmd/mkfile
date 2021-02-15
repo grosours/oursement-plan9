@@ -1,0 +1,7 @@
+<$PLAN9/src/mkhdr
+
+BIN=$HOME/plan9/bin
+
+TARG=`ls *.c | sed 's/.c//'`
+
+<$PLAN9/src/mkmany

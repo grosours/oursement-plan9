@@ -1,0 +1,19 @@
+#!/usr/local/plan9/bin/rc
+
+PLAN9=/usr/local/opt/plan9
+SHELL=rc
+shell=$SHELL
+BROWSER=chrome
+
+TERM=dumb
+PAGER=nobs
+EDITOR=E2
+
+9 plumber >[2] /dev/null
+
+lfont='/mnt/font/MonoLisa-Regular/12a/font'
+font='/mnt/font/MonoLisa-Regular/12a/font'
+
+fn sighup { }
+
+exec acme -a -f $font -F $lfont $* &

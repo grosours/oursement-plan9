@@ -1,0 +1,5 @@
+#!/usr/local/opt/plan9/bin/rc
+. /usr/local/opt/plan9/lib/acme.rc
+winname `{pwd}^/$1
+winctl clean
+winctl get
