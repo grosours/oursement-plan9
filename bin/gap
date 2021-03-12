@@ -1,0 +1,9 @@
+#!/usr/local/plan9/bin/rc
+
+cmd=(git add -p $*)
+
+if (~ $winid [0-9]*) {
+	cmd=(win $cmd)
+}
+
+$cmd
